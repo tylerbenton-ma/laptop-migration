@@ -1,0 +1,11 @@
+# chezmoi configuration — prompts on first init.
+[data]
+    name = "{{ promptStringOnce .chezmoi.sourceDir \"name\" \"Your full name\" }}"
+    email = "{{ promptStringOnce .chezmoi.sourceDir \"email\" \"Your email address\" }}"
+
+[git]
+    autoCommit = true
+    autoPush = false
+
+[edit]
+    command = "cursor --wait"

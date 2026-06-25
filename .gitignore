@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+*.swo
+.env
+.env.*
+!.env.example
+
+# chezmoi local data (not source templates)
+.chezmoi.data.toml
+.chezmoiignore.local
+
+# Secrets — never commit
+*.pem
+*.key
+id_rsa
+id_ed25519
+.git-credentials
